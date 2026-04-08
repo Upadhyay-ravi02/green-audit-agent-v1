@@ -1,0 +1,14 @@
+version: "1.0"
+name: "SustainabilityAuditor-v1"
+task_type: "web_compliance"
+entry_point: "env:SustainabilityEnv"
+tasks:
+  - id: "verify_offset"
+    difficulty: "easy"
+    target_score: 1.0
+  - id: "cross_reference"
+    difficulty: "medium"
+    target_score: 0.8
+  - id: "anomaly_detection"
+    difficulty: "hard"
+    target_score: 0.6
