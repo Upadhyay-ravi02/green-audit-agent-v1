@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build-meta"
+
+[project]
+name = "green-audit-agent"
+version = "0.1.0"
+description = "Autonomous AI Agent for Sustainability Audits"
+dependencies = [
+    "openai",
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "python-dotenv"
+]
